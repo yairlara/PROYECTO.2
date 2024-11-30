@@ -3,6 +3,8 @@ using namespace std;
 
 int main(){
 
+
+// mod 1 
 const double PRECIO_CAFE_AREPA_HUEVOS = 6000;
 const double PRECIO_CALDO_COSTILLA = 8000;
 const double PRECIO_CAFE_LECHE_PASTEL = 6000;
