@@ -3,6 +3,12 @@ using namespace std;
 
 int main(){
 
+
+    // Esto es un comentario
+
+
+    // Definicion de constantes 
+
 const double PRECIO_CAFE_AREPA_HUEVOS = 6000;
 const double PRECIO_CALDO_COSTILLA = 8000;
 const double PRECIO_CAFE_LECHE_PASTEL = 6000;
@@ -66,11 +72,13 @@ string continuar_programa = "si";
 double ganancias_totales = 0;
 int hora_actual;
 
+// Inicio de la eleccion de opciones de menu
+
 while (continuar_programa=="si") {
 
         cout<<" BIENVENIDO AL CAFE-BAR ROMA."<< endl;
         cout<<" Es un gusto atenderte el dia de hoy."<< endl;
-        cout <<"Antes de empezar por favor,¿Dime cual es tu edad?."<< endl;
+        cout <<"Antes de empezar por favor,ï¿½Dime cual es tu edad?."<< endl;
         cin >> edad_cliente;
 
         if (edad_cliente < 18) {
@@ -253,7 +261,7 @@ while (continuar_programa=="si") {
                     cout << "MENU DE BAR:";
                     cout << "1. Aguilita - $" << PRECIO_AGUILITA << endl;
                     cout << "2. Poker - $" << PRECIO_POKER << endl;
-                    cout << "3. Costeña - $" << PRECIO_COSTENA << endl;
+                    cout << "3. Costeï¿½a - $" << PRECIO_COSTENA << endl;
                     cout << "4. Dorada - $" << PRECIO_DORADA << endl;
                     cout << "5. Corona - $" << PRECIO_CORONA << endl;
                     cout << "6. Club Colombia - $" << PRECIO_CLUB_COLOMBIA << endl;
@@ -271,7 +279,7 @@ while (continuar_programa=="si") {
                         cout << "Has elegido Poker." << endl;
                     }else if (opcion_categoria == 3) {
                         total_pedido += PRECIO_COSTENA;
-                        cout << "Has elegido Costeña." << endl;
+                        cout << "Has elegido Costeï¿½a." << endl;
                     }else if (opcion_categoria == 4) {
                         total_pedido += PRECIO_DORADA;
                         cout << "Has elegido Dorada." << endl;
@@ -295,7 +303,7 @@ while (continuar_programa=="si") {
                         cout << "Has elegido Vino." << endl;
                     }
                 } else {
-                    cout << "No puedes acceder al Bar, eres menor de 18 años." << endl;
+                    cout << "No puedes acceder al Bar, eres menor de 18 aï¿½os." << endl;
                 }
             }else if (opcion_comida == 18) {  // Postres
                cout << "Este e el menu de postres que tenemos para ti.:]"<< endl;
@@ -353,7 +361,7 @@ while (continuar_programa=="si") {
                 }
             }
 
-            cout << "¿Quieres seguir comprando? Recuerda que hay variedad de productos. (si/no): "<< endl ;
+            cout << "ï¿½Quieres seguir comprando? Recuerda que hay variedad de productos. (si/no): "<< endl ;
             cin >> seguir_comprando;
 
         }
@@ -364,15 +372,15 @@ while (continuar_programa=="si") {
 
         // Leer saldo del cliente
         cout << "Vamos a ver si te alcanza." << endl ;
-        cout << "Dime,¿Cuál es su saldo disponible? " << endl;
+        cout << "Dime,ï¿½Cuï¿½l es su saldo disponible? " << endl;
         cin >> saldo_cliente;
 
         // Verificar si tiene suficiente dinero
         if (saldo_cliente >= total_pedido) {
             cout << "Veo que si puedes pagar tu pedido." << endl;
 
-            // Elegir método de pago
-            cout << "¿Cómo quieres pagar?" << endl;
+            // Elegir mï¿½todo de pago
+            cout << "ï¿½Cï¿½mo quieres pagar?" << endl;
             cout << "1. Al contado" << endl;
             cout << "2. Con tarjeta" << endl;
             cin >> metodo_pago;
@@ -385,7 +393,7 @@ while (continuar_programa=="si") {
                 cout << "OK,Has pagado con tarjeta. Tu saldo restante es: " << saldo_cliente << "$" << endl;
             }
 
-            // Añadir a las ganancias del café
+            // Aï¿½adir a las ganancias del cafï¿½
             ganancias_totales += total_pedido;
         } else {
             cout << "Lo siento, no tienes suficiente saldo para realizar el pedido, la proxima recuerda traer dinero :)" << endl;
@@ -393,7 +401,7 @@ while (continuar_programa=="si") {
 
         cout << "Gracias por tu visita, esperamos que allas tenido una experiencia acogedora,!VUELVE PRONTO TE ESPERAMOS" << endl;
         // Preguntar si desea continuar con otro usuario
-        cout << "Jefe¿Deseas que otro cliente haga su pedido? (si/no): " << endl;
+        cout << "Jefeï¿½Deseas que otro cliente haga su pedido? (si/no): " << endl;
         cout << "Jefe recuerde que si hay mas clientes abra mayor ganancia." << endl;
         cin >> continuar_programa;
 
@@ -403,7 +411,7 @@ while (continuar_programa=="si") {
 }
  // Mostrar las ganancias totales
     cout << "Mire Jefe las ganancias totales de hoy son: " << ganancias_totales << "$" << endl;
-    cout << "Nos vemos mañana jefe, Adios." << endl;
+    cout << "Nos vemos maï¿½ana jefe, Adios." << endl;
 
     return 0;
 }
