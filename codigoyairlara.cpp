@@ -3,12 +3,6 @@ using namespace std;
 
 int main(){
 
-
-    // Esto es un comentario
-
-
-    // Definicion de constantes 
-
 const double PRECIO_CAFE_AREPA_HUEVOS = 6000;
 const double PRECIO_CALDO_COSTILLA = 8000;
 const double PRECIO_CAFE_LECHE_PASTEL = 6000;
@@ -71,8 +65,6 @@ string seguir_comprando = "si";
 string continuar_programa = "si";
 double ganancias_totales = 0;
 int hora_actual;
-
-// Inicio de la eleccion de opciones de menu
 
 while (continuar_programa=="si") {
 
