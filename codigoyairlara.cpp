@@ -84,6 +84,7 @@ while (continuar_programa=="si") {
         cin >> hora_actual;
 
         if (hora_actual >= 6 && hora_actual <= 9) {
+          cout << "Este es el menu que tenemos para ti:" << endl;
           cout << "MENU DE DESAYUNO:";
           cout << "1. Cafe y Arepa con Huevo - $" << PRECIO_CAFE_AREPA_HUEVOS << endl;
           cout << "2. Caldo de Costilla - $" << PRECIO_CALDO_COSTILLA << endl;
